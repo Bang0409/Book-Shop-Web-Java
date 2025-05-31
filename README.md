@@ -13,6 +13,8 @@ B. Cấu hình utils.ConstantUtils
   Có thể thay đổi nếu như khác
 
 Sơ Đồ CSDL 
-![image](https://github.com/user-attachments/assets/3a15bbb0-7d26-44ac-a34f-8103ae165d74)       ![image](https://github.com/user-attachments/assets/73d964d1-cf90-4a61-ab8b-8c1ae3806711)
+![image](https://github.com/user-attachments/assets/3a15bbb0-7d26-44ac-a34f-8103ae165d74)       
+
+![image](https://github.com/user-attachments/assets/73d964d1-cf90-4a61-ab8b-8c1ae3806711)
 
 
