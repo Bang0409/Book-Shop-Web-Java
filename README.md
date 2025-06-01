@@ -1,20 +1,49 @@
+BookShopWeb
+Dự án Java Web xây dựng một Shop Bán Sách Catalog
+
+(1)	(2)	(3)
+Home	Signup	Signin
+Category	Product	Cart
+User	Order	Order Detail
+Wishlist	Search	Edit Review
+Admin Dashboard	Product Management	Create Product
+Update Product	Review Management	Order Management
 A. Set up project BookShopWeb
-1. Tạo Database
-   Mở MySQL Workbench → Open SQL Script → Execute bookshopdb.sql
-2. Nạp project vào IDEA
-   Mở IDEA → Get from VCS (màn hình Welcome) hoặc File | New | Project from Version Control (màn hình bình thường) → Clone project theo URL: https://github.com/Bang0409/Book-Shop-Web-Java.git
-3. Cấu hình TomCat
-   [Add Configuration...] → [+] Tomcat Server Local
-   [Fix] → BookShopWeb:war exploded
-4. Run (Shift F10)
+1. Nạp hình
+Tạo thư mục C:/var/webapp/images và giải nén tất cả hình từ file var-webapp-images.zip vào thư mục này.
 
+2. Tạo database
+Mở MySQL Workbench → Open SQL Script → Execute bookshopdb.sql
+
+3. Nạp project vào IDEA
+Mở IDEA → Get from VCS (màn hình Welcome) hoặc File | New | Project from Version Control (màn hình bình thường) → Clone project theo URL: https://github.com/markiusphan/BookShopWeb.git
+
+4. Cấu hình Tomcat
+[Add Configuration...] → [+] Tomcat Server Local
+[Fix] → BookShopWeb:war exploded
+5. Run (Shift+F10)
 B. Cấu hình utils.ConstantUtils
-  Mặc định, DB_NAME là bookshopdb, DB_USERNAME là root, DB_PASSWORD là 12345.
-  Có thể thay đổi nếu như khác
+Mặc định, DB_NAME là bookshopdb, DB_USERNAME là root, DB_PASSWORD là 12345.
+Có thể thay đổi nếu như khác.
+Sơ đồ CSDL
+DatabaseDesignBSW
 
-Sơ Đồ CSDL 
-![image](https://github.com/user-attachments/assets/3a15bbb0-7d26-44ac-a34f-8103ae165d74)       
-
-![image](https://github.com/user-attachments/assets/73d964d1-cf90-4a61-ab8b-8c1ae3806711)
-
-
+Dữ liệu mẫu
+Bảng	Số lượng record mẫu
+user	5
+product	100
+product_review	150
+category	15
+product_category	100
+cart	2
+cart_item	5
+orders	25
+order_item	60
+wishlist_item	30
+Phần mềm
+IDEA 2022.1.2
+MySQL Workbench 8.0.25
+Tomcat 9.0.48
+Cài đặt Tomcat 9.0.48
+Tải ở: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.48/bin/ (apache-tomcat-9.0.48.zip cho Windows và apache-tomcat-9.0.48.tar.gz cho Mac)
+Mở IDEA và thêm vào File | Settings | Build, Execution, Deployment | Application Servers > [+] Tomcat Server (Tomcat Home trỏ đến thư mục Tomcat, ví dụ: apache-tomcat-9.0.48)
